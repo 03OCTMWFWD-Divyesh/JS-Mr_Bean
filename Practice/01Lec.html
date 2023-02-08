@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 Lecture</title>
+
+
+    <!-- CSS Link Start Here -->
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Hello World</h1>
+
+</body>
+
+</html>
+
+
+
+<!-- JavaScript Link Start Here -->
+<script>
+
+    // javascript :- Brandan Eich - 1991 : Client side validation.
+
+    // Ryan Dahl - Node Js - Environment - JavaScript - Server side.
+
+    // JavaScript - Client, Server - JSON - JavaScript Object Notation :- Api -
+
+    // Variables :- To store the value in memory  location :
+
+    // (1) var :- Globle Scoped.
+    // (2) let :- block scoped.
+    // (3) const :- block scoped.
+
+
+
+    // Example :-
+
+        //(1)   
+                //var x = 20;                  //globle scope.
+
+            //   {
+            //     var x = 30;                                           //globle
+            //     console.log(`value of x is $ {x}`);                  //30
+            //  }
+            //     console.log('value of x is $ {x}');                //30
+
+
+
+
+        //(2) 
+                // let a = 40;                             //Globle
+
+                // {
+                    // let a = 50;                       //Blocked-scoped
+                    // console.log(a);                  //40
+                // }
+                    // console.log(a);
+    
+
+
+        // (3)
+                //  const p = 37;                              //Globle
+                //  {
+                //     const p = 44;                           //Local
+                //     console.log(p);
+                //  }
+                //     console.log(p);
+
+
+
+
+
+
+
+        // * Data Types :-
+                // (1) Number
+                // (2) Type-Casting
+
+
+        // Example :-
+
+                // let t = 45;
+                // console.log(typeof(t));
+
+                // let t1 = 7.7;
+                // console.log(typeof(t1));
+
+                // let num1 = Number(prompt("Enter The Number"));                      //prompt uper box mai ans data hai.
+                // let num2 = Number(prompt("Enter The Second Number"));
+                // let sum = num1 + num2;
+                // console.log(sum);
+                // console.log(typeof(num1));
+
+
+
+        //Example :-
+            //(1)
+                // si = p*r*t/100                                        //si = simple interest,  P = Principle Amount,  R = Rate of interest,  T = Time of Duration
+                // 25 = square root  
+
+                // let p = parseFloat (prompt("Enter The Principle Of Amount:"));                  //parseFloat :- point mai bhi ans deta hai ex(10.5+10.5=21)
+                // let r = parseFloat (prompt("Enter The Rate Of Interest:"));
+                // let t = parseFloat (prompt("Enter The Time Of Duration:"));
+
+                // let simple_interest = p*r*t* 0.01;
+                // let amount = p + simple_interest;
+                // console.log(`Total Amount You will Get ${amount}`);
+
+
+            // (2)
+                //   let x = parseFloat(prompt("Enter The Number:"));                                //parseFloat :- point mai bhi ans deta hai ex(10.5 hai to wo 10.5 dikhayega.)
+                //   console.log(x);
+
+
+            // (3)
+                    // let x = parseInt(prompt("Enter The Number:"));                                   //parseInt :- point mai ans nhi deta hai ex(10.5 hai to wo 10 he dikhayega.)
+                    // console.log(x);
+
+
+            // (4)
+                    // let x = Number (prompt("Enter The Number:"));
+                    // console.log(x);
+
+                    // let x = parseFloat("Enter The Number:");                                        //prompt ke bina wo NAN means not a number aisha dikhayega.
+                    // console.log(x);
+
+
+            // (5)
+                    let x = "Hello World";
+                    // let x = 18;
+
+                    if (isNaN(x)) {                                                     //NAN = Not A Number.
+                      console.log("It Is String");  
+                    } 
+                    else {
+                        console.log("It Is Number:");
+                    }
+</script>
