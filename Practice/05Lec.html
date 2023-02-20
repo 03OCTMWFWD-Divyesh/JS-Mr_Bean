@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 Lecture (14-02-23)</title>
+</head>
+
+<body>
+
+    <h1>Welcome to form validation in javascript.</h1>
+
+
+    <label for="name">Name</label>
+    <input type="text" name="nm" id="name"><br><br>
+
+    <label for="email">Email</label>
+    <input type="email" name="" id="email"><br><br>
+
+    <label for="password">password</label>
+    <input type="password" name="" id="password"><br><br>
+
+    <label for="gender">Gender</label>
+    <input type="radio" name="gen" id="gender">Male
+    <input type="radio" name="gen" id="gender">Female <br><br>
+
+    <label for="course">course</label>
+    <input type="checkbox" name="" id="">BE
+    <input type="checkbox" name="" id="">FED
+    <input type="checkbox" name="" id="">B.com <br><br>
+
+
+
+    <button type="submit" onclick="display()">submit</button>
+
+</body>
+
+</html>
+
+
+<!-- JavaScript Start Here -->
+
+
+<script>
+    function display() 
+    {
+    let nm = document.getElementById('name') .value;
+        let email = document.getElementById('email').value;
+        let pass = document.getElementById('password').value;
+        let gen = document.getElementById('gender').value;
+
+
+
+        // console.log(nm);
+        // alert(nm);
+        // console.log(`welcome ${nm}`);
+        console.log(`welcome ${nm} your email is : ${email}`);
+        // console.log(`your email is : ${email}`);
+        console.log(`your password is : ${pass}`);
+        console.log(`your gender is : ${gen}`);
+
+        // document.write(`your gender is : ${gen}`);
+
+        if (isNaN(nm))
+        {
+            return true;
+        }
+        else {
+            console.log(`Entered name is numeric : not allowed here`);
+            return false;
+        }
+    }
+
+
+
+    // * Function : Perform a particular task.
+
+        // (1) console.log();
+        // (2) console.dir();
+
+
+    // console.log("Hello World");
+    // console.warn("This is warning for you.");
+    // console.error("This is for a error.");
+
+    // console.log(document);
+
+    // console.dir(document);
+
+    // console.log(document.URL);
+
+    // console.log(document.domain);
+
+    // let st = "Welcome to Html."
+
+    // let x = 254;
+    // let res = x.toUpperCase();                                                              // --> Is not a function.
+    // console.log(res);
+
+
+        // *Logical Operator :-
+
+        // let x = 40;
+        // let y = 35;
+        // let z = 45;
+        // let res = (x>y && x>z) ? x: (y>z && y>z) ? y:z;
+        // console.log(`Greatest among three number are : ${res}`);
+
+</script>
